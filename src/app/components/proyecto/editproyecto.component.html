@@ -1,0 +1,65 @@
+<section class="vh-100 gradient-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+
+<div class="container" *ngIf="proyecto"> 
+  <div class="row"> 
+      <div> 
+          <form (ngSubmit)="onUpdate()" novalidate #f="ngForm"> 
+              <div class="form-group">
+                 <h2><label for="nameP">Nombre del proyecto</label></h2> 
+                  <input type="text" class="form-control" id="nameP" name="nameP" placeholder="Titulo" [(ngModel)]="proyecto.nameP" required>
+              </div>
+              <div class="form-group">
+                 <h2><label for="descripcionP">Descripción de proyecto</label></h2> 
+                  <input type="text" class="form-control" id="descripcionP" name="descripcionP" [(ngModel)]="proyecto.descripcionP" required>
+              </div>
+              <div class="form-group">
+                <h2><label for="imagenP">Imagen del proyecto</label></h2> 
+                 <input type="text" class="form-control" id="imagenP" name="imagenP" [(ngModel)]="proyecto.imagenP" required>
+             </div>
+              <button class="btn btn-primary">
+                  Editar Proyecto
+              </button>
+          </form>
+      </div>
+  </div>
+</div></div>
+<!-- 
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+-->
+<!-- <div class="container" *ngIf="proyecto"> 
+<div class="modal fade" id="nameP" tabindex="-1" role="dialog" aria-labelledby="ProyectoModalLabel" aria-hidden="true"> 
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ProyectoModalLabel">añadir proyecto2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">  
+          <div class="form-group">
+            <label for="nameP" class="col-form-label">Nombre del proyecto</label> 
+            <input type="text" class="form-control" id="nameP" name="nameP" placeholder="Titulo" [(ngModel)]="proyecto.nameP" required>
+          </div>
+          <div class="form-group">
+            <label for="descripcionP" class="col-form-label">Descripcion</label>
+            <input type="text" class="form-control" id="descripcionP" name="descripcionP" placeholder="Descripcion" [(ngModel)]="proyecto.descripcionP" required>
+          </div>
+          <div class="form-group">
+            <h2><label for="imagenP">Imagen del proyecto</label></h2> 
+             <input type="text" class="form-control" id="imagenP" name="imagenP" placeholder="Imagen" [(ngModel)]="proyecto.imagenP" required>
+         </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Añadir cambios</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+-->

@@ -1,0 +1,14 @@
+.gradient-custom {
+    font-family: Century Gothic;
+    /* fallback for old browsers */
+    background:   #e9b118;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(223, 139, 29), rgb(243, 233, 86));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(169, 147, 173), rgb(238, 235, 243))
+    }
+h2{
+    color: #fff;
+}
