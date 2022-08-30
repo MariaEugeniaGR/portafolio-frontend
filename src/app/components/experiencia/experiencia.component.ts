@@ -10,7 +10,7 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class ExperienciaComponent implements OnInit {
   expe: Experiencia[] = []; 
-
+  loaded: boolean = false;
   constructor(private sExperiencia: SExperienciaService, private tokenService: TokenService) { }
 
   isLogged = false;
@@ -28,6 +28,7 @@ export class ExperienciaComponent implements OnInit {
     this.sExperiencia.lista().subscribe(
       data => {
         this.expe = data;
+        this.loaded = true;
       })
   }
 
